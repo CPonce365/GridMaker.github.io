@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Maker</title>
+        <link rel="styling" href="gridProperties.css">
+    </head>
+    <body>
+        <button onclick="addRow()"> Add Row</button>
+        <button onclick="addColumn()"> Add Column</button>
+        <button onclick="removeRow()"> Remove Row</button>
+        <button onclick="removeColumn()"> Remove Column</button>
+        <button onclick="uncoloredCells()"> Fill All Uncolored Cells</button>
+        <button onclick="colorAllCells()"> Fill All</button>
+        <button onclick="clearCells()"> Clear</button>
+        <label for="colors"> Choose A Color:</label>
+        <select onchange="selectColor()" id="selectedColorId">
+            <option value="SelectColor"> Select Color</option>
+            <option value="Blue"> Blue</option>
+            <option value="Yellow"> Yellow</option>
+            <option value="Purple"> Purple</option>
+            <option value="Orange"> Orange</option>
+            <option value="Green"> Green</option>
+        </select>
+
+        <table></table>
+        <script src="gridActions.js"></script>
+    </body>
+
+</html>
