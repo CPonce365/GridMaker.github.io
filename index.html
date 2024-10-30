@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Grid Maker</title>
-        <link rel="styling" href="gridProperties.css">
+        <link rel="stylesheet" href="styling.css">
     </head>
     <body>
         <button onclick="addRow()"> Add Row</button>
@@ -15,15 +15,16 @@
         <label for="colors"> Choose A Color:</label>
         <select onchange="selectColor()" id="selectedColorId">
             <option value="SelectColor"> Select Color</option>
-            <option value="Blue"> Blue</option>
-            <option value="Yellow"> Yellow</option>
-            <option value="Purple"> Purple</option>
-            <option value="Orange"> Orange</option>
-            <option value="Green"> Green</option>
+            <option value="White"> None</option>
+            <option value="Blue" style="color:blue;"> Blue</option>
+            <option value="Purple" style="color: purple;"> Purple</option>
+            <option value="Orange" style="color: orange;"> Orange</option>
+            <option value="Green" style="color: green;"> Green</option>
+            <option value="Red" style="color: red;"> Red</option>
         </select>
+       <p id="colorchosen"></p>
+        <table id="grid">
+        </table>
 
-        <table></table>
         <script src="gridActions.js"></script>
     </body>
-
-</html>
